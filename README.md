@@ -15,7 +15,7 @@ Metrics should be categorized by repository and operation.
 ## Requirements
 
 - OS which support Unix Socket (tested with MacOS + Centos)
-- Rust
+- ~~Rust~~ Golang
 - Git (tested with 2.26.0)
 
 ## How to use
