@@ -31,3 +31,15 @@ async fn main() -> io::Result<()> {
 async fn handle_event(event: String) {
     println!("{}", event);
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn should_handle_event() {
+        tokio_test::block_on(
+            handle_event(String::from("blah"))
+        );
+    }
+}
